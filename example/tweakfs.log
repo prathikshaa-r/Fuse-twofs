@@ -1,0 +1,523 @@
+
+bb_init()
+    conn:
+    proto_major =  7
+    proto_minor =  26
+    async_read =  1
+    max_write =  131072
+    max_readahead =  131072
+    capable = 00000ffb
+    want = 00000010
+    max_background =  0
+    congestion_threshold =  0
+    context:
+    fuse = 5790f7d0
+    uid =  0
+    gid =  0
+    pid =  0
+    private_data = 5790e260
+    logfile = 5790f290
+    rootdir = /home/pr109/ece566-esa/tweakfs/example/rootdir
+    umask = 00000
+
+bb_getattr(path="/", statbuf=0x565cbc00)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev =  64768
+    st_ino =  215264
+    st_mode = 0 40775
+    st_nlink =  2
+    st_uid =  1189417
+    st_gid =  1005
+    st_rdev =  0
+    st_size =  56
+    st_blksize =  4096
+    st_blocks =  0
+    st_atime = 0x 5d75c98b
+    st_mtime = 0x 5d75c986
+    st_ctime = 0x 5d75c986
+
+bb_getxattr(path = "/", name = "security.selinux", value = 0x48000bf0, size = 255)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "system.posix_acl_access", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "system.posix_acl_default", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_opendir(path="/", fi=0x565cbc20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    opendir returned 0x0x7f1b500020a0
+    fi:
+    flags = 0x 00018800
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b500020a0
+    lock_owner = 0x 0000000000000000
+
+bb_readdir(path="/", buf=0x50002020, filler=0x56de8d00, offset=0, fi=0x55dcac20)
+    readdir returned 0x0x7f1b500020d0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+#### Secret filename: secret.
+#### Secret filename: secret2.txt.
+calling filler for *buddy.txt*.
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 7f1b500020a0
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b500020a0
+    lock_owner = 0x 0000000000000000
+
+bb_getattr(path="/", statbuf=0x565cbc00)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev =  64768
+    st_ino =  215264
+    st_mode = 0 40775
+    st_nlink =  2
+    st_uid =  1189417
+    st_gid =  1005
+    st_rdev =  0
+    st_size =  56
+    st_blksize =  4096
+    st_blocks =  0
+    st_atime = 0x 5d75c98b
+    st_mtime = 0x 5d75c986
+    st_ctime = 0x 5d75c986
+
+bb_getxattr(path = "/", name = "security.selinux", value = 0x48000bf0, size = 255)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "system.posix_acl_access", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "system.posix_acl_default", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getattr(path="/bogus.txt", statbuf=0x565cbc30)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/bogus.txt", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev =  64768
+    st_ino =  215266
+    st_mode = 0 100664
+    st_nlink =  1
+    st_uid =  1189417
+    st_gid =  1005
+    st_rdev =  0
+    st_size =  11
+    st_blksize =  4096
+    st_blocks =  8
+    st_atime = 0x 5d7583b0
+    st_mtime = 0x 5d75b130
+    st_ctime = 0x 5d75b130
+
+bb_getxattr(path = "/bogus.txt", name = "security.selinux", value = 0x48000bf0, size = 255)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/bogus.txt", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/bogus.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/bogus.txt", name = "system.posix_acl_access", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/bogus.txt", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/bogus.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+****** get_attr on buddy.txt *******
+bb_getxattr(path = "/buddy.txt", name = "security.selinux", value = 0x50001df0, size = 255)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/buddy.txt", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/buddy.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No such file or directory
+
+bb_releasedir(path="/", fi=0x55dcac30)
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 7f1b500020a0
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b500020a0
+    lock_owner = 0x 0000000000000000
+
+bb_getattr(path="/", statbuf=0x565cbc00)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev =  64768
+    st_ino =  215264
+    st_mode = 0 40775
+    st_nlink =  2
+    st_uid =  1189417
+    st_gid =  1005
+    st_rdev =  0
+    st_size =  56
+    st_blksize =  4096
+    st_blocks =  0
+    st_atime = 0x 5d75c98b
+    st_mtime = 0x 5d75c986
+    st_ctime = 0x 5d75c986
+
+bb_getattr(path="/", statbuf=0x555c9c00)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev =  64768
+    st_ino =  215264
+    st_mode = 0 40775
+    st_nlink =  2
+    st_uid =  1189417
+    st_gid =  1005
+    st_rdev =  0
+    st_size =  56
+    st_blksize =  4096
+    st_blocks =  0
+    st_atime = 0x 5d75c98b
+    st_mtime = 0x 5d75c986
+    st_ctime = 0x 5d75c986
+
+bb_opendir(path="/", fi=0x55dcac20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    opendir returned 0x0x7f1b480017f0
+    fi:
+    flags = 0x 00018800
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b480017f0
+    lock_owner = 0x 0000000000000000
+
+bb_readdir(path="/", buf=0x48001770, filler=0x56de8d00, offset=0, fi=0x565cbc20)
+    readdir returned 0x0x7f1b48001820
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+#### Secret filename: secret.
+#### Secret filename: secret2.txt.
+calling filler for *buddy.txt*.
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 7f1b480017f0
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b480017f0
+    lock_owner = 0x 0000000000000000
+
+bb_releasedir(path="/", fi=0x55dcac30)
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 7f1b480017f0
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b480017f0
+    lock_owner = 0x 0000000000000000
+
+bb_getattr(path="/", statbuf=0x565cbc00)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev =  64768
+    st_ino =  215264
+    st_mode = 0 40775
+    st_nlink =  2
+    st_uid =  1189417
+    st_gid =  1005
+    st_rdev =  0
+    st_size =  56
+    st_blksize =  4096
+    st_blocks =  0
+    st_atime = 0x 5d75c98b
+    st_mtime = 0x 5d75c986
+    st_ctime = 0x 5d75c986
+
+bb_opendir(path="/", fi=0x555c9c20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    opendir returned 0x0x7f1b4c000f30
+    fi:
+    flags = 0x 00018800
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b4c000f30
+    lock_owner = 0x 0000000000000000
+
+bb_readdir(path="/", buf=0x4c000eb0, filler=0x56de8d00, offset=0, fi=0x55dcac20)
+    readdir returned 0x0x7f1b4c000f60
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+#### Secret filename: secret.
+#### Secret filename: secret2.txt.
+calling filler for *buddy.txt*.
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 7f1b4c000f30
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b4c000f30
+    lock_owner = 0x 0000000000000000
+
+bb_releasedir(path="/", fi=0x555c9c30)
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 7f1b4c000f30
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b4c000f30
+    lock_owner = 0x 0000000000000000
+#### Secret filename: /secret.
+
+bb_getattr(path="/", statbuf=0x565cbc00)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev =  64768
+    st_ino =  215264
+    st_mode = 0 40775
+    st_nlink =  2
+    st_uid =  1189417
+    st_gid =  1005
+    st_rdev =  0
+    st_size =  56
+    st_blksize =  4096
+    st_blocks =  0
+    st_atime = 0x 5d75c98b
+    st_mtime = 0x 5d75c986
+    st_ctime = 0x 5d75c986
+
+bb_opendir(path="/", fi=0x555c9c20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    opendir returned 0x0x7f1b4c009000
+    fi:
+    flags = 0x 00018800
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b4c009000
+    lock_owner = 0x 0000000000000000
+
+bb_readdir(path="/", buf=0x4c000fc0, filler=0x56de8d00, offset=0, fi=0x55dcac20)
+    readdir returned 0x0x7f1b4c009030
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+#### Secret filename: secret.
+#### Secret filename: secret2.txt.
+calling filler for *buddy.txt*.
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 7f1b4c009000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b4c009000
+    lock_owner = 0x 0000000000000000
+
+bb_releasedir(path="/", fi=0x555c9c30)
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 7f1b4c009000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b4c009000
+    lock_owner = 0x 0000000000000000
+
+bb_getattr(path="/", statbuf=0x55dcac00)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev =  64768
+    st_ino =  215264
+    st_mode = 0 40775
+    st_nlink =  2
+    st_uid =  1189417
+    st_gid =  1005
+    st_rdev =  0
+    st_size =  56
+    st_blksize =  4096
+    st_blocks =  0
+    st_atime = 0x 5d75c98b
+    st_mtime = 0x 5d75c986
+    st_ctime = 0x 5d75c986
+
+bb_opendir(path="/", fi=0x565cbc20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    opendir returned 0x0x7f1b5000a430
+    fi:
+    flags = 0x 00018800
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b5000a430
+    lock_owner = 0x 0000000000000000
+
+bb_readdir(path="/", buf=0x500024b0, filler=0x56de8d00, offset=0, fi=0x555c9c20)
+    readdir returned 0x0x7f1b5000a460
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+#### Secret filename: secret.
+#### Secret filename: secret2.txt.
+calling filler for *buddy.txt*.
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 7f1b5000a430
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b5000a430
+    lock_owner = 0x 0000000000000000
+
+bb_releasedir(path="/", fi=0x565cbc30)
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 7f1b5000a430
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b5000a430
+    lock_owner = 0x 0000000000000000
+
+bb_getattr(path="/", statbuf=0x555c9c00)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev =  64768
+    st_ino =  215264
+    st_mode = 0 40775
+    st_nlink =  2
+    st_uid =  1189417
+    st_gid =  1005
+    st_rdev =  0
+    st_size =  56
+    st_blksize =  4096
+    st_blocks =  0
+    st_atime = 0x 5d75c98b
+    st_mtime = 0x 5d75c986
+    st_ctime = 0x 5d75c986
+
+bb_opendir(path="/", fi=0x55dcac20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    opendir returned 0x0x7f1b48001870
+    fi:
+    flags = 0x 00018800
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b48001870
+    lock_owner = 0x 0000000000000000
+
+bb_readdir(path="/", buf=0x480017f0, filler=0x56de8d00, offset=0, fi=0x565cbc20)
+    readdir returned 0x0x7f1b480018a0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+#### Secret filename: secret.
+#### Secret filename: secret2.txt.
+calling filler for *buddy.txt*.
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 7f1b48001870
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b48001870
+    lock_owner = 0x 0000000000000000
+
+bb_releasedir(path="/", fi=0x55dcac30)
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 7f1b48001870
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b48001870
+    lock_owner = 0x 0000000000000000
+
+bb_getattr(path="/", statbuf=0x565cbc00)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev =  64768
+    st_ino =  215264
+    st_mode = 0 40775
+    st_nlink =  2
+    st_uid =  1189417
+    st_gid =  1005
+    st_rdev =  0
+    st_size =  56
+    st_blksize =  4096
+    st_blocks =  0
+    st_atime = 0x 5d75c98b
+    st_mtime = 0x 5d75c986
+    st_ctime = 0x 5d75c986
+
+bb_opendir(path="/", fi=0x555c9c20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/tweakfs/example/rootdir", path = "/", fpath = "/home/pr109/ece566-esa/tweakfs/example/rootdir/"
+    opendir returned 0x0x7f1b4c009000
+    fi:
+    flags = 0x 00018800
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b4c009000
+    lock_owner = 0x 0000000000000000
+
+bb_readdir(path="/", buf=0x4c001160, filler=0x56de8d00, offset=0, fi=0x55dcac20)
+    readdir returned 0x0x7f1b4c009030
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+#### Secret filename: secret.
+#### Secret filename: secret2.txt.
+calling filler for *buddy.txt*.
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 7f1b4c009000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b4c009000
+    lock_owner = 0x 0000000000000000
+
+bb_releasedir(path="/", fi=0x555c9c30)
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 7f1b4c009000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 00007f1b4c009000
+    lock_owner = 0x 0000000000000000
+#### Secret filename: /secret2.txt.
+
+bb_destroy(userdata=0x5790e260)

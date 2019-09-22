@@ -1,0 +1,1001 @@
+
+bb_init()
+    conn:
+    proto_major =  7
+    proto_minor =  26
+    async_read =  1
+    max_write =  131072
+    max_readahead =  131072
+    capable = 00000ffb
+    want = 00000010
+    max_background =  0
+    congestion_threshold =  0
+    context:
+    fuse = cbb038c0
+    uid =  0
+    gid =  0
+    pid =  0
+    private_data = cbb02260
+    logfile = cbb03290
+    rootdir = /home/pr109/ece566-esa/twofs/example/filesystem_image
+    umask = 00000
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+
+bb_getattr(path="/", statbuf=0x58c2fc00)
+    si:
+    st_dev =  0
+    st_ino =  0
+    st_mode = 0 40666
+    st_nlink =  1
+    st_uid =  0
+    st_gid =  0
+    st_rdev =  0
+    st_size =  2051
+    st_blksize =  0
+    st_blocks =  0
+    st_atime = 0x 00000000
+    st_mtime = 0x 00000000
+    st_ctime = 0x 00000000
+
+bb_opendir(path="/", fi=0x58c2fc20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+    bb_opendir on '' or rootdir returns 0 for success.
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+
+bb_getattr(path="/", statbuf=0x59430c00)
+    si:
+    st_dev =  0
+    st_ino =  0
+    st_mode = 0 40666
+    st_nlink =  1
+    st_uid =  0
+    st_gid =  0
+    st_rdev =  0
+    st_size =  2051
+    st_blksize =  0
+    st_blocks =  0
+    st_atime = 0x 00000000
+    st_mtime = 0x 00000000
+    st_ctime = 0x 00000000
+
+bb_readdir(path="/", fi=0x58c2fc20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+    bb_readdir on '' or rootdir returns 0 for success.
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+
+bb_getattr(path="/", statbuf=0x59430c00)
+    si:
+    st_dev =  0
+    st_ino =  0
+    st_mode = 0 40666
+    st_nlink =  1
+    st_uid =  0
+    st_gid =  0
+    st_rdev =  0
+    st_size =  2051
+    st_blksize =  0
+    st_blocks =  0
+    st_atime = 0x 00000000
+    st_mtime = 0x 00000000
+    st_ctime = 0x 00000000
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+
+bb_opendir(path="/", fi=0x59430c20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+    bb_opendir on '' or rootdir returns 0 for success.
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+
+bb_getattr(path="/", statbuf=0x58c2fc00)
+    si:
+    st_dev =  0
+    st_ino =  0
+    st_mode = 0 40666
+    st_nlink =  1
+    st_uid =  0
+    st_gid =  0
+    st_rdev =  0
+    st_size =  2051
+    st_blksize =  0
+    st_blocks =  0
+    st_atime = 0x 00000000
+    st_mtime = 0x 00000000
+    st_ctime = 0x 00000000
+
+bb_readdir(path="/", fi=0x59430c20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+    bb_readdir on '' or rootdir returns 0 for success.
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+
+bb_opendir(path="/", fi=0x58c2fc20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+    bb_opendir on '' or rootdir returns 0 for success.
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+
+bb_getattr(path="/", statbuf=0x59430c00)
+    si:
+    st_dev =  0
+    st_ino =  0
+    st_mode = 0 40666
+    st_nlink =  1
+    st_uid =  0
+    st_gid =  0
+    st_rdev =  0
+    st_size =  2051
+    st_blksize =  0
+    st_blocks =  0
+    st_atime = 0x 00000000
+    st_mtime = 0x 00000000
+    st_ctime = 0x 00000000
+
+bb_readdir(path="/", fi=0x58c2fc20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+    bb_readdir on '' or rootdir returns 0 for success.
+
+bb_open(path"/file1", fi=0x59430ce0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+*** bb_open on file or file2 ***
+    open returned 5
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000005
+    lock_owner = 0x 0000000000000000
+
+bb_read(path="/file1", buf=0x4c001760, size=4096, offset=0, fi=0x58c2fce0)
+ends_with:
+    string sizes match
+ends_with:
+    not a match
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 00000005
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000005
+    lock_owner = 0x 0000000000000000
+    pread returned 1025
+
+bb_fgetattr(path="/file1", statbuf=0x59430c00, fi=0x59430ce0)
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 00000005
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000005
+    lock_owner = 0x 0000000000000000
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+
+bb_open(path"/file2", fi=0x59430ce0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+*** bb_open on file or file2 ***
+    open returned 6
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000006
+    lock_owner = 0x 0000000000000000
+
+bb_read(path="/file2", buf=0x4c001760, size=4096, offset=0, fi=0x58c2fce0)
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 00000006
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000006
+    lock_owner = 0x 0000000000000000
+    pread returned 1025
+
+bb_fgetattr(path="/file2", statbuf=0x59430c00, fi=0x59430ce0)
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 00000006
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000006
+    lock_owner = 0x 0000000000000000
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+
+bb_open(path"/file1", fi=0x58c2fce0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+*** bb_open on file or file2 ***
+    open returned 7
+    fi:
+    flags = 0x 00008001
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000007
+    lock_owner = 0x 0000000000000000
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+
+bb_write(path="/file1", buf=0x5a056060, size=7, offset=0, fi=0x58c2fd50)
+ends_with:
+    string sizes match
+ends_with:
+    not a match
+    fi:
+    flags = 0x 00008001
+    fh_old = 0x 00000007
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000007
+    lock_owner = 0x 0000000000000000
+    pwrite returned 7
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+
+bb_open(path"/file1", fi=0x59430ce0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+*** bb_open on file or file2 ***
+    open returned 8
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000008
+    lock_owner = 0x 0000000000000000
+
+bb_read(path="/file1", buf=0x4c001760, size=4096, offset=0, fi=0x58c2fce0)
+ends_with:
+    string sizes match
+ends_with:
+    not a match
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 00000008
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000008
+    lock_owner = 0x 0000000000000000
+    pread returned 1025
+
+bb_fgetattr(path="/file1", statbuf=0x59430c00, fi=0x59430ce0)
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 00000008
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000008
+    lock_owner = 0x 0000000000000000
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+
+bb_open(path"/file2", fi=0x58c2fce0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+*** bb_open on file or file2 ***
+    open returned 9
+    fi:
+    flags = 0x 00008001
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000009
+    lock_owner = 0x 0000000000000000
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+
+bb_write(path="/file2", buf=0x5a056060, size=7, offset=0, fi=0x58c2fd50)
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    fi:
+    flags = 0x 00008001
+    fh_old = 0x 00000009
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000009
+    lock_owner = 0x 0000000000000000
+    pwrite returned 7
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+
+bb_open(path"/file2", fi=0x59430ce0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+*** bb_open on file or file2 ***
+    open returned 10
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 000000000000000a
+    lock_owner = 0x 0000000000000000
+
+bb_read(path="/file2", buf=0x4c001760, size=4096, offset=0, fi=0x58c2fce0)
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 0000000a
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 000000000000000a
+    lock_owner = 0x 0000000000000000
+    pread returned 1025
+
+bb_fgetattr(path="/file2", statbuf=0x59430c00, fi=0x59430ce0)
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 0000000a
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 000000000000000a
+    lock_owner = 0x 0000000000000000
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+
+bb_open(path"/file2", fi=0x58c2fce0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+*** bb_open on file or file2 ***
+    open returned 11
+    fi:
+    flags = 0x 00008001
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 000000000000000b
+    lock_owner = 0x 0000000000000000
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+
+bb_write(path="/file2", buf=0x5a056060, size=13, offset=0, fi=0x58c2fd50)
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    fi:
+    flags = 0x 00008001
+    fh_old = 0x 0000000b
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 000000000000000b
+    lock_owner = 0x 0000000000000000
+    pwrite returned 13
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+
+bb_open(path"/file2", fi=0x59430ce0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+*** bb_open on file or file2 ***
+    open returned 12
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 000000000000000c
+    lock_owner = 0x 0000000000000000
+
+bb_read(path="/file2", buf=0x4c001760, size=4096, offset=0, fi=0x58c2fce0)
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 0000000c
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 000000000000000c
+    lock_owner = 0x 0000000000000000
+    pread returned 1025
+
+bb_fgetattr(path="/file2", statbuf=0x59430c00, fi=0x59430ce0)
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 0000000c
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 000000000000000c
+    lock_owner = 0x 0000000000000000
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+
+bb_open(path"/file2", fi=0x58c2fce0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+*** bb_open on file or file2 ***
+    open returned 13
+    fi:
+    flags = 0x 00008001
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 000000000000000d
+    lock_owner = 0x 0000000000000000
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+
+bb_write(path="/file2", buf=0x5a056060, size=33, offset=0, fi=0x58c2fd50)
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    fi:
+    flags = 0x 00008001
+    fh_old = 0x 0000000d
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 000000000000000d
+    lock_owner = 0x 0000000000000000
+    pwrite returned 33
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+
+bb_open(path"/file2", fi=0x59430ce0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+*** bb_open on file or file2 ***
+    open returned 14
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 000000000000000e
+    lock_owner = 0x 0000000000000000
+
+bb_read(path="/file2", buf=0x4c001760, size=4096, offset=0, fi=0x58c2fce0)
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 0000000e
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 000000000000000e
+    lock_owner = 0x 0000000000000000
+    pread returned 1025
+
+bb_fgetattr(path="/file2", statbuf=0x59430c00, fi=0x59430ce0)
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 0000000e
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 000000000000000e
+    lock_owner = 0x 0000000000000000
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+
+bb_open(path"/file1", fi=0x58c2fce0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+*** bb_open on file or file2 ***
+    open returned 15
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 000000000000000f
+    lock_owner = 0x 0000000000000000
+
+bb_read(path="/file1", buf=0x54002740, size=4096, offset=0, fi=0x59430ce0)
+ends_with:
+    string sizes match
+ends_with:
+    not a match
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 0000000f
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 000000000000000f
+    lock_owner = 0x 0000000000000000
+    pread returned 1025
+
+bb_fgetattr(path="/file1", statbuf=0x58c2fc00, fi=0x58c2fce0)
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 0000000f
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 000000000000000f
+    lock_owner = 0x 0000000000000000
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+
+bb_opendir(path="/", fi=0x58c2fc20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+    bb_opendir on '' or rootdir returns 0 for success.
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+
+bb_getattr(path="/", statbuf=0x59430c00)
+    si:
+    st_dev =  0
+    st_ino =  0
+    st_mode = 0 40666
+    st_nlink =  1
+    st_uid =  0
+    st_gid =  0
+    st_rdev =  0
+    st_size =  2051
+    st_blksize =  0
+    st_blocks =  0
+    st_atime = 0x 00000000
+    st_mtime = 0x 00000000
+    st_ctime = 0x 00000000
+
+bb_readdir(path="/", fi=0x58c2fc20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+    bb_readdir on '' or rootdir returns 0 for success.
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+
+bb_opendir(path="/", fi=0x59430c20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+    bb_opendir on '' or rootdir returns 0 for success.
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+
+bb_getattr(path="/", statbuf=0x58c2fc00)
+    si:
+    st_dev =  0
+    st_ino =  0
+    st_mode = 0 40666
+    st_nlink =  1
+    st_uid =  0
+    st_gid =  0
+    st_rdev =  0
+    st_size =  2051
+    st_blksize =  0
+    st_blocks =  0
+    st_atime = 0x 00000000
+    st_mtime = 0x 00000000
+    st_ctime = 0x 00000000
+
+bb_readdir(path="/", fi=0x59430c20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+    bb_readdir on '' or rootdir returns 0 for success.
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+
+bb_getattr(path="/", statbuf=0x58c2fc00)
+    si:
+    st_dev =  0
+    st_ino =  0
+    st_mode = 0 40666
+    st_nlink =  1
+    st_uid =  0
+    st_gid =  0
+    st_rdev =  0
+    st_size =  2051
+    st_blksize =  0
+    st_blocks =  0
+    st_atime = 0x 00000000
+    st_mtime = 0x 00000000
+    st_ctime = 0x 00000000
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+
+bb_opendir(path="/", fi=0x59430c20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+    bb_opendir on '' or rootdir returns 0 for success.
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+
+bb_getattr(path="/", statbuf=0x58c2fc00)
+    si:
+    st_dev =  0
+    st_ino =  0
+    st_mode = 0 40666
+    st_nlink =  1
+    st_uid =  0
+    st_gid =  0
+    st_rdev =  0
+    st_size =  2051
+    st_blksize =  0
+    st_blocks =  0
+    st_atime = 0x 00000000
+    st_mtime = 0x 00000000
+    st_ctime = 0x 00000000
+
+bb_readdir(path="/", fi=0x59430c20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+    bb_readdir on '' or rootdir returns 0 for success.
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+
+bb_opendir(path="/", fi=0x58c2fc20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+    bb_opendir on '' or rootdir returns 0 for success.
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+
+bb_getattr(path="/", statbuf=0x59430c00)
+    si:
+    st_dev =  0
+    st_ino =  0
+    st_mode = 0 40666
+    st_nlink =  1
+    st_uid =  0
+    st_gid =  0
+    st_rdev =  0
+    st_size =  2051
+    st_blksize =  0
+    st_blocks =  0
+    st_atime = 0x 00000000
+    st_mtime = 0x 00000000
+    st_ctime = 0x 00000000
+
+bb_readdir(path="/", fi=0x58c2fc20)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+    bb_readdir on '' or rootdir returns 0 for success.
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+
+bb_open(path"/file1", fi=0x58c2fce0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+*** bb_open on file or file2 ***
+    open returned 16
+    fi:
+    flags = 0x 00008401
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000010
+    lock_owner = 0x 0000000000000000
+
+bb_write(path="/file1", buf=0x5a078060, size=9, offset=1025, fi=0x59430d50)
+ends_with:
+    string sizes match
+ends_with:
+    not a match
+    fi:
+    flags = 0x 00008401
+    fh_old = 0x 00000010
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000010
+    lock_owner = 0x 0000000000000000
+    pwrite returned 0
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+
+bb_open(path"/file1", fi=0x58c2fce0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+*** bb_open on file or file2 ***
+    open returned 17
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000011
+    lock_owner = 0x 0000000000000000
+
+bb_read(path="/file1", buf=0x54002c50, size=4096, offset=0, fi=0x59430ce0)
+ends_with:
+    string sizes match
+ends_with:
+    not a match
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 00000011
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000011
+    lock_owner = 0x 0000000000000000
+    pread returned 1025
+
+bb_fgetattr(path="/file1", statbuf=0x58c2fc00, fi=0x58c2fce0)
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 00000011
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000011
+    lock_owner = 0x 0000000000000000
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file1", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file1"
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+
+bb_open(path"/file2", fi=0x59430ce0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+*** bb_open on file or file2 ***
+    open returned 18
+    fi:
+    flags = 0x 00008401
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000012
+    lock_owner = 0x 0000000000000000
+
+bb_write(path="/file2", buf=0x5a056060, size=9, offset=1025, fi=0x58c2fd50)
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    fi:
+    flags = 0x 00008401
+    fh_old = 0x 00000012
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000012
+    lock_owner = 0x 0000000000000000
+    pwrite returned 9
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+
+bb_open(path"/file2", fi=0x59430ce0)
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+*** bb_open on file or file2 ***
+    open returned 19
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 00000000
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000013
+    lock_owner = 0x 0000000000000000
+
+bb_read(path="/file2", buf=0x4c001860, size=4096, offset=0, fi=0x58c2fce0)
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    fi:
+    flags = 0x 00008000
+    fh_old = 0x 00000013
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000013
+    lock_owner = 0x 0000000000000000
+    pread returned 1034
+
+bb_fgetattr(path="/file2", statbuf=0x59430c00, fi=0x59430ce0)
+    fi:
+    flags = 0x 00000000
+    fh_old = 0x 00000013
+    writepage =  0
+    direct_io =  0
+    keep_cache =  0
+    fh = 0x 0000000000000013
+    lock_owner = 0x 0000000000000000
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/file2", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/file2"
+ends_with:
+    not a match
+ends_with:
+    string sizes match
+    bb_fullpath:  rootdir = "/home/pr109/ece566-esa/twofs/example/filesystem_image", path = "/", fpath = "/home/pr109/ece566-esa/twofs/example/filesystem_image/"
+
+bb_getattr(path="/", statbuf=0x59430c00)
+    si:
+    st_dev =  0
+    st_ino =  0
+    st_mode = 0 40666
+    st_nlink =  1
+    st_uid =  0
+    st_gid =  0
+    st_rdev =  0
+    st_size =  2051
+    st_blksize =  0
+    st_blocks =  0
+    st_atime = 0x 00000000
+    st_mtime = 0x 00000000
+    st_ctime = 0x 00000000
+
+bb_destroy(userdata=0xcbb02260)
