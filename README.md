@@ -1,6 +1,5 @@
 # Fuse-Tweakfs
-ECE 566 Program 0, pt.1: BBFS filesystem with some tweaks.
+ECE 566 Program 0, pt.2: Basic Filesystem.
 
-1. Every directory contains a file buddy.txt that cotains bytes "Hey, buddy!"
-
-2. Hide any filename starting with the word "secret"
+* Divide disk into file1 and file2
+* Read and write to these files on disk.
